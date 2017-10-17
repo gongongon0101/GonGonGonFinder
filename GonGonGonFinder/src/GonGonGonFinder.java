@@ -7,6 +7,10 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 
 import javax.swing.JButton;
@@ -90,8 +94,6 @@ public class GonGonGonFinder extends JFrame {
                 }
             }
         );
-
-
 
         text1.setText("Lv100 マキュラ・マリウス");
 
@@ -217,4 +219,33 @@ public class GonGonGonFinder extends JFrame {
 		cb1.addItem("Lv75 シュヴァリエ・マグナ");
 		raidList.put("Lv75 シュヴァリエ・マグナ", "Lvl 75 Luminiera Omega");
 	}
+
+	// ファイル読み込み
+	public String fileRead(String filePath) {
+	    FileReader fr = null;
+	    BufferedReader br = null;
+	    try {
+	        fr = new FileReader(filePath);
+	        br = new BufferedReader(fr);
+
+	        String line;
+	        while ((line = br.readLine()) != null) {
+	            System.out.println(line);
+	            return line;
+	        }
+	    } catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            br.close();
+	            fr.close();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+		return filePath;
+	}
 }
+
