@@ -3,9 +3,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="src/lib/twitter4j-async-4.0.4.jar"/>
-	<classpathentry kind="lib" path="src/lib/twitter4j-core-4.0.4.jar" sourcepath="C:/Users/GONGON~1/AppData/Local/Temp/.org.sf.feeling.decompiler1508241645157/source/twitter4j-core-4.0.4-sources.jar"/>
+	<classpathentry kind="lib" path="src/lib/twitter4j-core-4.0.4.jar" sourcepath="C:/Users/GONGON~1/AppData/Local/Temp/.org.sf.feeling.decompiler1508654009210/source/twitter4j-core-4.0.4-sources-1508655633575.jar"/>
 	<classpathentry kind="lib" path="src/lib/twitter4j-examples-4.0.4.jar"/>
 	<classpathentry kind="lib" path="src/lib/twitter4j-media-support-4.0.4.jar"/>
-	<classpathentry kind="lib" path="src/lib/twitter4j-stream-4.0.4.jar" sourcepath="C:/Users/GONGON~1/AppData/Local/Temp/.org.sf.feeling.decompiler1508241645157/source/twitter4j-stream-4.0.4-sources.jar"/>
+	<classpathentry kind="lib" path="src/lib/twitter4j-stream-4.0.4.jar" sourcepath="C:/Users/GONGON~1/AppData/Local/Temp/.org.sf.feeling.decompiler1508654009210/source/twitter4j-stream-4.0.4-sources-1508657919363.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
